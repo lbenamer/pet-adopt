@@ -1,0 +1,15 @@
+{
+    // "editor.defaultFormatter": "ms-python.black-formatter",
+    // "editor.formatOnSave": true,
+    // "python.linting.pycodestyleEnabled": false,
+    // "python.linting.mypyEnabled": true,
+    // "python.linting.enabled": true
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+      },
+      "isort.args":["--profile", "black"],
+}

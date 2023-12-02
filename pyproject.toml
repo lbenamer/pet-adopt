@@ -2,13 +2,30 @@
 name = "pet-adopt"
 version = "0.1.0"
 description = ""
-authors = ["Lakhdar Benamer <lakhdar.benamer@external.totalenergies.com>"]
+authors = ["Lakhdar Benamer <github.com/lbenamer>"]
 readme = "README.md"
 packages = [{include = "pet_adopt"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+fastapi = "^0.104.0"
+jinja2 = "^3.1.2"
+uvicorn = "^0.23.2"
+python-multipart = "^0.0.6"
+pydantic = {extras = ["email"], version = "^2.4.2"}
+tinydb = "^4.8.0"
+docusign-esign = "^3.25.0"
 
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.12.0"
+black = "^23.10.1"
+mypy = "^1.6.1"
+jupyter = "^1.0.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
 
 [build-system]
 requires = ["poetry-core"]
